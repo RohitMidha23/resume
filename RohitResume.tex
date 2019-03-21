@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Rohit Midha
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://rohitmidha23.github.io/}{\Large Rohit Midha}} & Email : \href{mailto:rohit.midha23@gmail.com}{rohit.midha23@gmail.com}\\
+  \href{https://rohitmidha23.github.io/}{https://rohitmidha23.github.io/} & Mobile : +91 7358777008 \\
+  {} & \href{https://github.com/RohitMidha23}{Github: RohitMidha23}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SSN College of Engineering, Anna University}{Tamil Nadu, India}
+      {Bachelor of Education in Computer Science and Engineering;  GPA: 9.20/10.0}{Aug. 2017 -- }
+    \resumeSubheading
+      {Maharish Vidya Mandir Senior Secondary School}{Chennai, India}
+      {High School Diploma;   AISSCE : 96.4\% (482/500)}{June. 2015 -- July. 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {GeeksForGeeks}{Chennai, India}
+    {Technical Content Writer -- Algorithm blogger}{Jan 2019 -- Present}
+    \resumeItemListStart
+      \resumeItem{Articles}
+        {Written Various articles on topics ranging from basics of Python to Complex Neural Networks.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {CodeFemme}{Chennai, India}
+      {Founder, CTO}{June 2018 -- Present}
+      \resumeItemListStart
+        \resumeItem{Te(a)chTheTeach}
+          {Te(a)chTheTeach is a workshop series aimed at teaching PGT's about Python and it's various Libraries. Taught 100+ CBSE teachers so far.}
+        \resumeItem{Numpy, Pandas and Neural Nets}
+          {Guest Lecture on the topic "Numpy, Pandas and Neural Nets" at Kendra Vidyalya, Indian Institute of Technology, Madras.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{jargone}
+      {A web app that summarizes Terms and Conditions to keep you informed about the data companies collect from you. }
+    \resumeSubItem{Calmity}
+      {An app that helps victims of a disaster find food, transport and shelter in nearby places and allows them to make SOS calls. Further, allows able users to finding NGOs that they can volunteer at and post about any amenities that they have to offer.}
+      \resumeSubItem{trashify}
+      {Android Application that uses Deep Learning and TensorFlowLite to classify your trash into 3 categories.\\Prototype of model using Raspberry Pi in implementation phase.}
+	\resumeSubItem{pharmassist}
+      {A novel label and Android App that lets visually impaired people gain health literacy and read out easy  instructions for pills when they place the prescription bottle on the phone screen. }
+    \resumeSubItem{Facial Recognition Attendance Manager}
+      {Creating a prototype of a model attendance manager using Facial Recognition integrated with Raspberry Pi, Cameras and Firebase requests made by the student. \\Fully funded by SSN College of Engineering.}
+      \resumeSubItem{Other}
+      {The SSNMUN Website, binarify (convert images to binary art), Indian License Plate Recognition.}
+  \resumeSubHeadingListEnd
+
+%
+%--------Achievements------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+         \resumeSubItem
+  {Runner Up, MotorQ Hackathon}{March 2019}
+      \resumeSubItem
+  {Runner Up, HackerSpace, SSN College of Engineering}{Feb 2019}
+    \resumeSubItem
+  {Second Runner Up, Anna University, Kurukshetra Datathon}{Feb 2019}
+  \resumeSubItem
+  {Second Runner Up, IEEE Makeathon}{Jan 2019} 	
+  \resumeSubItem
+  {Merit Scholarship, SSN College of Engineering}{Dec 2018}
+     \resumeSubItem
+      {Top 5 Teams, Major League Hacking, Local Hack Day}{Dec 2018}
+  \resumeSubItem
+    {Finalist, International Youth Math Challenge}{Nov 2018}
+    \resumeSubItem
+      {Indumathi Muthukumar Award}{June 2017}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+%--------Certifications------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+      {Data Science Foundations - Level 2, IBM}{Jan 2019}
+    \resumeSubItem
+  {Machine Learning, Stanford University}{Apr 2018}
+    \resumeSubItem
+  {Introduction to Mathematical Thinking, Stanford University}{Jan 2018} 	
+\resumeSubHeadingListEnd
+
+%--------------------------------------------
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, C, C++, SQL, PL SQL,Java, XML, Shell}
+      }
+      \item{
+       \textbf{Technologies}{: Android Studio, React Native, React, Keras, TensorFlow, Pandas, PyTorch}
+    }
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+%--------Blog------------
+\section{Blog}
+I also run a blog which you can find  \href{https://rohitmidha23.github.io/blog}{here}. It has had over 30k page views.
+\end{document}
