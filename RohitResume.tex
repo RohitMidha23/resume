@@ -85,7 +85,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {SSN College of Engineering, Anna University}{Tamil Nadu, India}
-      {Bachelor of Engineering in Computer Science and Engineering;  GPA: 8.99/10.0}{Aug. 2017 -- }
+      {Bachelor of Engineering in Computer Science and Engineering;  GPA: 9.03/10.0}{Aug. 2017 -- }
     \resumeSubheading
       {Maharish Vidya Mandir Senior Secondary School}{Chennai, India}
       {High School Diploma;   AISSCE : 96.4\% (482/500)}{June. 2015 -- July. 2017}
@@ -95,17 +95,27 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+    {Goldman Sachs}{}
+    {Summer Analyst}{May 2020 -- June 2020}
+    \resumeItemListStart
+    \resumeItem{Risk Metrics Inventory UI}
+        {Built a UI that acts as a central registry and lets users perform CRUD operations on metrics metadata, keeping inter-dependencies consistent. UI populated with values from configuration file and components kept agnostic. Made with React and Redux. }
+    \resumeItemListEnd
+
      \resumeSubheading
     {AIcrowd}{}
-    {Research Intern}{March 2019  -- Present}
+    {Research Intern}{March 2020 -- May 2020}
     \resumeItemListStart
-    \resumeItem{Food Recognition Challenge}
-        {Designing baselines and working on novel in house research on the Food Recognition dataset.}
+    \resumeItem{AIcrowd Blitz}
+        {Curated datasets and created baselines for the Mask Recognition Challenge, Food Classification Challenge and Scrambled Text Challenge.}
+        \resumeItem{Food Recognition Challenge}
+        {Challenge Organizer for Round 3 of the challenge. Created baselines using mmdetection for Round 2.}
     \resumeItemListEnd
-    
+
     \resumeSubheading
     {Indian Institute of Technology, Madras}{Chennai, India}
-    {Research Intern}{November 2019 -- Present}
+    {Research Intern}{November 2019 -- May 2020}
     \resumeItemListStart
     \resumeItem{Mentors}
         {Professor Gitakrishnan Ramadurai, Professor Balaraman Ravindran}
@@ -128,7 +138,7 @@
         {Implemented a Quantum Neural Network as a Variational Circuit for real world applications such as Credit Card Fraud Detection.}
 \fi
     \resumeItemListEnd
-
+\iffalse
   \resumeSubheading
     {SSN Model United Nations}{Chennai, India}
     {Under Secretary General, Technology and Development}{Apr 2019 -- Present}
@@ -138,14 +148,7 @@
         \resumeItem{Website}
         {Built a dynamic website with Python, Flask, HTML and JavaScript using basic concepts of Bootstrap and MongoDB. }
     \resumeItemListEnd
-
-  \resumeSubheading
-    {GeeksForGeeks}{Chennai, India}
-    {Technical Content Writer -- Algorithm blogger}{Jan 2019 -- Jan  2020}
-    \resumeItemListStart
-      \resumeItem{Articles}
-        {Written Various articles on topics ranging from basics of Python to Complex Neural Networks.}
-    \resumeItemListEnd
+\fi
 
     \resumeSubheading
       {CodeFemme}{Chennai, India}
@@ -182,18 +185,20 @@
     \resumeSubItem{Facial Recognition Attendance Manager}
       {Creating a prototype of a model attendance manager using Facial Recognition integrated with Raspberry Pi, Cameras and Firebase requests made by the student. \\Fully funded by SSN College of Engineering.}
       \resumeSubItem{Other}
-      {The SSNMUN Website, binarify (convert images to binary art), Indian License Plate Recognition.}
+      {The SSNMUN Website, binarify (convert images to binary art.}
   \resumeSubHeadingListEnd
 
 %--------Achievements------------
 \section{Achievements}
   \resumeSubHeadingListStart
+  \resumeSubItem
+  {Rank 1, Round 2 Food Recognition Challenge, Seerave Foundation}{May 2020}
                  \resumeSubItem
   {Rank 2, Transfer Learning for International Crisis Response, DEEP - AiCrowd}{Jan 2020}
                \resumeSubItem
   {Winner, AstraZeneca AI Hackathon, IIT Madras}{Jan 2020}
              \resumeSubItem
-  {Rank 1, Food Recognition Challenge, Seerave Foundation - AiCrowd}{Dec 2019}
+  {Rank 1, Round 1 Food Recognition Challenge, Seerave Foundation}{Dec 2019}
            \resumeSubItem
   {Rank 208 of 6000+ participants, IEEE CIS Fraud Detection Challenge}{October 2019}
          \resumeSubItem
@@ -202,20 +207,10 @@
   {Runner Up, Amazon Web Services (AWS) Challenge, AngelHack Global Virtual Hackathon}{July 2019}
      \resumeSubItem
   {Winner, Indian Sub-Continent, AngelHack Global Virtual Hackathon}{July 2019}
-    \resumeSubItem
-  {Top 8 Teams at AngelHack Bangalore}{June 2019}
   \resumeSubItem
   {Rank 503 of 9000+ participants, Santander Customer Transaction Prediction }{April 2019}
     \resumeSubItem
-  {Runner Up, Anna University, Abacus Datathon}{March 2019}
-    \resumeSubItem
   {Runner Up, MotorQ Hackathon}{March 2019}
-     \resumeSubItem
-  {Runner Up, HackerSpace, SSN College of Engineering}{Feb 2019}
-    \resumeSubItem
-  {Second Runner Up, Anna University, Kurukshetra Datathon}{Feb 2019}
-  \resumeSubItem
-  {Second Runner Up, IEEE Makeathon}{Jan 2019} 	
      \resumeSubItem
       {Top 5 Teams, Major League Hacking, Local Hack Day}{Dec 2018}
   \resumeSubItem
@@ -228,23 +223,7 @@
   \resumeSubHeadingListStart
       \resumeSubItem
   {Merit Scholarship, SSN College of Engineering}{Dec 2018}
-    \resumeSubItem
-      {Secure and Private AI Scholarship, Facebook}{May 2019}	
 \resumeSubHeadingListEnd
-
-\iffalse
-\section{Open Source Contributions}
-  \resumeSubHeadingListStart
-      \resumeSubItem
-  {FastAI}{fastai is an Open Source Package for Python that makes deep learning easier to use. Found a bug in the core code and updated the functions that generate the documents.}
-    \resumeSubItem
-      {Carbon}{Carbon makes it easy to create and share beautiful images of your source code. Added support for XQuery language.}
-  \resumeSubItem
-  {IBM - Qiskit}{An open-source quantum computing framework for leveraging today's quantum processors in research, education, and business developed by IBM. Helped in maintenance and broken links.}
-    \resumeSubItem
-  {XanaduAI - Pennylane}{Helped in maintenance and upgrading exp function.}
-\resumeSubHeadingListEnd
-\fi
 
 %-------------------------------------------
 %--------Certifications------------
@@ -271,17 +250,17 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Python, C, C++, SQL, Java, JavaScript, Shell}
+     \textbf{Languages}{: Python, C, C++, SQL, Java, JavaScript, HTML}
       }
       \item{
-       \textbf{Frameworks and Technologies}{: Android Studio, React, Keras, TensorFlow, PyTorch, FastAI}
+       \textbf{Frameworks and Technologies}{: Android Studio, React, Redux, Keras, PyTorch, FastAI}
     }
   \resumeSubHeadingListEnd
 
 \section{Volunteering}
 \resumeSubHeadingListStart
 \resumeItem{Google }{Organized the Google AI Explore ML Workshop at SSN College of Engineering.}
-\resumeItem{Stanford University}{Section Leader for CS106A, Programming Methodologies (Code in Place).}
+\resumeItem{Stanford University}{Section Leader for CS106A, offered during COVID-19 pandemic, with 10,000 global students participating from around the world.}
 \resumeSubHeadingListEnd
 %-------------------------------------------
 %--------Blog------------
