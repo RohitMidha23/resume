@@ -49,6 +49,7 @@
   }
 }
 
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -58,6 +59,7 @@
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubSubHeading}[2]{\textit{\small #1} \hfill \textit{\small #2} }
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -85,7 +87,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {SSN College of Engineering, Anna University}{Tamil Nadu, India}
-      {Bachelor of Engineering in Computer Science and Engineering;  GPA: 9.03/10.0}{Aug. 2017 -- }
+      {Bachelor of Engineering in Computer Science and Engineering;  GPA: 9.2/10.0}{Aug. 2017 -- July 2021}
+      
+      \small{University Rank: \#10, College Rank: \#3}
     \resumeSubheading
       {Maharish Vidya Mandir Senior Secondary School}{Chennai, India}
       {High School Diploma;   AISSCE : 96.4\% (482/500)}{June. 2015 -- July. 2017}
@@ -97,7 +101,33 @@
   \resumeSubHeadingListStart
     \resumeSubheading
     {Goldman Sachs}{}
-    {Summer Analyst}{May 2020 -- June 2020}
+    {Engineering Analyst}{August 2021 -- Present}
+    \resumeItemListStart
+    \resumeItem{Risk Analysis and Review Platform (RARE)}
+        {
+        \begin{itemize}
+        \item By automating workflows, RARE lowers costs and improves quality and UX of the review process, thus bringing transparency and effectiveness to a critical risk process.
+        \item Setup the SLIs and SLOs for our teams offerings using Prometheus for Monitoring our Kubernetes deployments.
+        \item Setup Grafana Dashboards to visualise some of our SLOs as well as other metrics useful to the development teams.
+        \item Developed APIs (Jackson, Java) for CRUD operations as well as for certain UI use-cases.
+        \end{itemize}
+        }
+    \resumeItemListEnd
+
+    \resumeSubSubHeading{Engineering Intern}{Jan 2021-- July 2021}
+    \resumeItemListStart
+    	\resumeItem{Risk Metric Model}
+        {Worked on developing the data model as well the back-end (Java, Dropwizard) that would be used as a template for reporting Risk related data by our financial counterparts in the firm.}
+        \resumeItem{Risk Review and Reporting}
+        {
+        \begin{itemize}
+        \item Part of the initial team that worked on setting up the data model and backend for the review process at the firm.
+        \item Developed APIs to indicate statistics on usage of the teams offerings, as well as information that could be useful for reviewing.
+        \end{itemize}
+        }
+    \resumeItemListEnd
+    
+    \resumeSubSubHeading {Summer Analyst}{May 2020 -- June 2020}
     \resumeItemListStart
     \resumeItem{Risk Metrics Inventory UI}
         {Built a UI that acts as a central registry and lets users perform CRUD operations on metrics metadata, keeping inter-dependencies consistent. UI populated with values from configuration file and components kept agnostic. Made with React and Redux. }
@@ -105,7 +135,7 @@
 
      \resumeSubheading
     {AIcrowd}{}
-    {Research Intern}{March 2020 -- May 2020}
+    {Research Intern}{March 2020 -- September 2020}
     \resumeItemListStart
     \resumeItem{AIcrowd Blitz}
         {Curated datasets and created baselines for the Mask Recognition Challenge, Food Classification Challenge and Scrambled Text Challenge.}
@@ -185,16 +215,20 @@
     \resumeSubItem{Facial Recognition Attendance Manager}
       {Creating a prototype of a model attendance manager using Facial Recognition integrated with Raspberry Pi, Cameras and Firebase requests made by the student. \\Fully funded by SSN College of Engineering.}
       \resumeSubItem{Other}
-      {The SSNMUN Website, binarify (convert images to binary art.}
+      {The SSNMUN Website, binarify (convert images to binary art.)}
   \resumeSubHeadingListEnd
 
 %--------Achievements------------
 \section{Achievements}
   \resumeSubHeadingListStart
   \resumeSubItem
+  {Runner Up, Innovation, Goldman Sachs Awards}{2021}
+   \resumeSubItem
+  {Rank 2, Hockey Team Classification Challenge, AIcrowd}{October 2020}
+  \resumeSubItem
   {Rank 1, Round 2 Food Recognition Challenge, Seerave Foundation}{May 2020}
                  \resumeSubItem
-  {Rank 2, Transfer Learning for International Crisis Response, DEEP - AiCrowd}{Jan 2020}
+  {Rank 2, Transfer Learning for International Crisis Response, DEEP - AIcrowd}{Jan 2020}
                \resumeSubItem
   {Winner, AstraZeneca AI Hackathon, IIT Madras}{Jan 2020}
              \resumeSubItem
@@ -222,7 +256,9 @@
 \section{Scholarships}
   \resumeSubHeadingListStart
       \resumeSubItem
-  {Merit Scholarship, SSN College of Engineering}{Dec 2018}
+  {Merit Scholarship, SSN College of Engineering}{2017-18}
+  \resumeSubItem
+  {Rank 1, Merit Scholarship, SSN College of Engineering}{2019-2020}
 \resumeSubHeadingListEnd
 
 %-------------------------------------------
