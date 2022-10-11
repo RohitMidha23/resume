@@ -90,9 +90,11 @@
       {Bachelor of Engineering in Computer Science and Engineering;  GPA: 9.2/10.0}{Aug. 2017 -- July 2021}
       
       \small{University Rank: \#10, College Rank: \#3}
+      \iffalse
     \resumeSubheading
       {Maharish Vidya Mandir Senior Secondary School}{Chennai, India}
       {High School Diploma;   AISSCE : 96.4\% (482/500)}{June. 2015 -- July. 2017}
+      \fi
   \resumeSubHeadingListEnd
 
 
@@ -103,12 +105,17 @@
     {Goldman Sachs}{}
     {Engineering Analyst}{August 2021 -- Present}
     \resumeItemListStart
-    \resumeItem{Risk Analysis and Review Platform (RARE)}
+    \resumeItem{Risk Analysis and Review Engine (RARE)}
         {
         \begin{itemize}
-        \item By automating workflows, RARE lowers costs and improves quality and UX of the review process, thus bringing transparency and effectiveness to a critical risk process.
-        \item Setup the SLIs and SLOs for our teams offerings using Prometheus for Monitoring our Kubernetes deployments.
-        \item Setup Grafana Dashboards to visualise some of our SLOs as well as other metrics useful to the development teams.
+        \item By automating archaic workflows, RARE lowers costs and improves quality and UX of the review process, thus bringing transparency and effectiveness to a critical risk process.
+        \item Reduced Review time by a third, from over 6 hours to 2 hours.
+        \item Introduced RARE Lite in an effort to acquire users who needed only a partial suite of services offered by the platform.       
+        \item Introduced the Management Dashboard to provide high level insights to senior management, based on meta-data collected by the platform.
+        \item Developed streaming data pipeline to push data to Snowflake using Apache Kafka and Alloy, a proprietary GS software.
+        \item Streamlined the data flow for calculating a key financial metric reported and spearheaded the initiative to on-board onto Snowflake. 
+        \item Defined SLA for our team's offerings using Prometheus for monitoring our Kubernetes deployments.
+        \item Setup Grafana Dashboards to visualise some of our SLOs as well as Application Health page to monitor microservices.
         \item Developed APIs (Jackson, Java) for CRUD operations as well as for certain UI use-cases.
         \end{itemize}
         }
@@ -117,12 +124,14 @@
     \resumeSubSubHeading{Engineering Intern}{Jan 2021-- July 2021}
     \resumeItemListStart
     	\resumeItem{Risk Metric Model}
-        {Worked on developing the data model as well the back-end (Java, Dropwizard) that would be used as a template for reporting Risk related data by our financial counterparts in the firm.}
-        \resumeItem{Risk Review and Reporting}
+        {Developed the system architecture for scaling the system. Upgraded the backend to use Java with a Dropwizard server connected to Sybase ASE DB.}
+        \resumeItem{Risk Analysis and Review Engine (RARE)}
         {
         \begin{itemize}
-        \item Part of the initial team that worked on setting up the data model and backend for the review process at the firm.
-        \item Developed APIs to indicate statistics on usage of the teams offerings, as well as information that could be useful for reviewing.
+        \item Shadowed users and documented user stories which helped in creating the initial requirements document.
+        \item Developed the data model following microservice architecture, defining 3 services run on Java, Dropwizard backend. 
+        \item Set up Kubernetes deployments for services with appropriate caching methodologies. 
+        \item Introduced APIs for simplifying complex graph operations that represented Standard Business Hierarchy graphs for deliverables onboarded.
         \end{itemize}
         }
     \resumeItemListEnd
@@ -130,17 +139,31 @@
     \resumeSubSubHeading {Summer Analyst}{May 2020 -- June 2020}
     \resumeItemListStart
     \resumeItem{Risk Metrics Inventory UI}
-        {Built a UI that acts as a central registry and lets users perform CRUD operations on metrics metadata, keeping inter-dependencies consistent. UI populated with values from configuration file and components kept agnostic. Made with React and Redux. }
+        {Introduced a UI that acts as a central registry and lets users perform CRUD operations on metrics meta-data, keeping inter-dependencies consistent. Used modular design for components to generate them based on configuration files. Made with React and Redux. }
     \resumeItemListEnd
+
+    \resumeSubheading
+      {CodeFemme}{Chennai, India}
+      {Founder, CTO}{June 2018 -- Present}
+      \resumeItemListStart
+      \resumeItem{Partner Schools}
+          {Partnered with over 70 schools in the city to provide best in class Python workshops and class material for high school students.}
+        \resumeItem{Te(a)chTheTeach}
+          {Te(a)chTheTeach is a workshop series aimed at teaching PGT's about Python and it's various Libraries. Taught 100+ CBSE teachers so far.}
+        \resumeItem{Numpy, Pandas and Neural Nets}
+          {Guest Lecture on the topic "Numpy, Pandas and Neural Nets" at Kendra Vidyalya, Indian Institute of Technology, Madras. 50+ teachers from across the country in attendance.}
+      \resumeItemListEnd
 
      \resumeSubheading
     {AIcrowd}{}
     {Research Intern}{March 2020 -- September 2020}
     \resumeItemListStart
+    \resumeItem{World Health Organization}
+        {Implemented Recognition models to identify various types of endangered snail species in the wild.}
     \resumeItem{AIcrowd Blitz}
         {Curated datasets and created baselines for the Mask Recognition Challenge, Food Classification Challenge and Scrambled Text Challenge.}
         \resumeItem{Food Recognition Challenge}
-        {Challenge Organizer for Round 3 of the challenge. Created baselines using mmdetection for Round 2.}
+        {Challenge Organizer for Round 3 of the challenge. Created baselines using mmdetection for Round 3.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -152,7 +175,7 @@
       \resumeItem{License Plate Recognition}
         {Working on a system to recognise license plates from videos obtained from CCTV cameras.}
         \resumeItem{Vehicle Counting}
-        {Working on a real time system that works with large scale data obtained from traffic cameras across the city for vehicle counting to model dynamic traffic flow.}
+        {Developed a real time system that works with large scale data obtained from traffic cameras across the city for vehicle counting to model dynamic traffic flow.}
     \resumeItemListEnd
     
    \resumeSubheading
@@ -160,7 +183,7 @@
     {Data Scientist Intern}{May 2019 -- July 2019}
         \resumeItemListStart
       \resumeItem{Named Entity Recognition}
-        {Worked on using Conditional Random Fields, Recurrent Neural Networks and Long Short Term Memories for Named Entity Recognition of Medical Drugs.}
+        {Worked on using Conditional Random Fields, Recurrent Neural Networks and Long Short Term Memories for Named Entity Recognition of Medical Drugs. Increased accuracy from 77\% to 81\%.}
         \resumeItem{Quantum Machine Learning}
         {Wrote machine learning algorithms optimized to work on a quantum computer such as quantum linear regression and built a quantum Neural Network for Credit Card Fraud Detection.}
 \iffalse
@@ -179,41 +202,35 @@
         {Built a dynamic website with Python, Flask, HTML and JavaScript using basic concepts of Bootstrap and MongoDB. }
     \resumeItemListEnd
 \fi
-
-    \resumeSubheading
-      {CodeFemme}{Chennai, India}
-      {Founder, CTO}{June 2018 -- Present}
-      \resumeItemListStart
-        \resumeItem{Te(a)chTheTeach}
-          {Te(a)chTheTeach is a workshop series aimed at teaching PGT's about Python and it's various Libraries. Taught 100+ CBSE teachers so far.}
-        \resumeItem{Numpy, Pandas and Neural Nets}
-          {Guest Lecture on the topic "Numpy, Pandas and Neural Nets" at Kendra Vidyalya, Indian Institute of Technology, Madras. 50+ teachers from across the country in attendance.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %--------Research and Publications--------
 \section{Research: Posters, Publications and Talks}
   \resumeSubHeadingListStart
     \resumeSubItem
-      {A Low Cost Solution to the Open Images Instance Segmentation Challenge}{Poster accepted at International Conference on Computer Vision (ICCV), 2019}
+      {\href{https://bit.ly/OpenImagesPoster2019}{A Low Cost Solution to the Open Images Instance Segmentation Challenge}}{Poster accepted at International Conference on Computer Vision (ICCV), 2019. \href{https://bit.ly/OpenImagesPoster2019}{Poster here.}}
        \resumeSubItem
-      {Transfer Learning for International Crisis Response}{Talk and Presentation at the Challenge Track of Applied Machine Learning Days (AMLD), 2020 }
+      {\href{https://bit.ly/AMLDPresentationDEEP}{Transfer Learning for International Crisis Response}}{Talk and Presentation at the Challenge Track of Applied Machine Learning Days (AMLD), 2020 \href{https://bit.ly/AMLDPresentationDEEP}{Slides here.} }
   \resumeSubHeadingListEnd
 %-----------PROJECTS-----------------
 \section{Projects}
  \resumeSubHeadingListStart
-  	\resumeSubItem{pharmassist}
-      {A novel label and Android App that lets visually impaired people gain health literacy. Reads out easy instructions for pills when prescription bottle is placed on phone screen. Connected with Alexa for easy access.}
+  	\resumeSubItem{\href{https://bit.ly/PharmAssistDemo}{pharmassist}}
+      {A novel label and Android App that lets visually impaired people gain health literacy. Reads out easy instructions for pills when prescription bottle is placed on phone screen. Connected with Alexa for easy access. \href{https://bit.ly/PharmAssistDemo}{Video demo here.}}
   \resumeSubItem{jargone}
       {A web app that summarizes Terms and Conditions to keep you informed about the data companies collect from you.}
+      
+      \resumeSubItem{Federated Learning for Medical Imaging}
+      {A framework that provides a complete machine learning pipeline to let researchers and end users train any model on medical image data from various sources. Uses YAML files for simple configuration.}
+  
+    \resumeSubItem{Facial Recognition Attendance Manager}
+      {Creating a prototype of a model attendance manager using Facial Recognition integrated with Raspberry Pi, Cameras and Firebase requests made by the student. \\Fully funded by SSN College of Engineering.}
+      \iffalse
     \resumeSubItem{Calmity}
       {An app that helps victims of a disaster find food, transport and shelter in nearby places and allows them to make SOS calls. Further, allows able users to finding NGOs that they can volunteer at and post about any amenities that they have to offer.}
       \resumeSubItem{trashify}
       {Android Application that uses Deep Learning and TensorFlowLite to classify your trash into 3 categories.\\Prototype of model using Raspberry Pi in implementation phase.}
-
-    \resumeSubItem{Facial Recognition Attendance Manager}
-      {Creating a prototype of a model attendance manager using Facial Recognition integrated with Raspberry Pi, Cameras and Firebase requests made by the student. \\Fully funded by SSN College of Engineering.}
+\fi
       \resumeSubItem{Other}
       {The SSNMUN Website, binarify (convert images to binary art.)}
   \resumeSubHeadingListEnd
@@ -221,26 +238,28 @@
 %--------Achievements------------
 \section{Achievements}
   \resumeSubHeadingListStart
+   \resumeSubItem
+  {Runner Up, Goldman Sachs Hackathon}{2022}
+   \resumeSubItem
+  {Runner Up, Digital Poster, Goldman Sachs Internal Engineering Conference}{2022}
   \resumeSubItem
   {Runner Up, Innovation, Goldman Sachs Awards}{2021}
    \resumeSubItem
   {Rank 2, Hockey Team Classification Challenge, AIcrowd}{October 2020}
-  \resumeSubItem
-  {Rank 1, Round 2 Food Recognition Challenge, Seerave Foundation}{May 2020}
-                 \resumeSubItem
+   \resumeSubItem
   {Rank 2, Transfer Learning for International Crisis Response, DEEP - AIcrowd}{Jan 2020}
-               \resumeSubItem
+   \resumeSubItem
   {Winner, AstraZeneca AI Hackathon, IIT Madras}{Jan 2020}
-             \resumeSubItem
-  {Rank 1, Round 1 Food Recognition Challenge, Seerave Foundation}{Dec 2019}
-           \resumeSubItem
-  {Rank 208 of 6000+ participants, IEEE CIS Fraud Detection Challenge}{October 2019}
-         \resumeSubItem
+  \resumeSubItem
+  {Rank 1, Round 1 - 3, Food Recognition Challenge, Seerave Foundation}{Dec 2019}
+  \resumeSubItem
   {Rank 34, Open Images Instance Segmentation Challenge}{October 2019}
        \resumeSubItem
   {Runner Up, Amazon Web Services (AWS) Challenge, AngelHack Global Virtual Hackathon}{July 2019}
      \resumeSubItem
   {Winner, Indian Sub-Continent, AngelHack Global Virtual Hackathon}{July 2019}
+   \resumeSubItem
+  {Rank 208 of 6000+ participants, IEEE CIS Fraud Detection Challenge}{October 2019}
   \resumeSubItem
   {Rank 503 of 9000+ participants, Santander Customer Transaction Prediction }{April 2019}
     \resumeSubItem
@@ -249,16 +268,18 @@
       {Top 5 Teams, Major League Hacking, Local Hack Day}{Dec 2018}
   \resumeSubItem
     {Finalist, International Youth Math Challenge}{Nov 2018}
+\iffalse
     \resumeSubItem
       {Indumathi Muthukumar Award}{June 2017}
+\fi
   \resumeSubHeadingListEnd
 %--------Scholarships------------
 \section{Scholarships}
   \resumeSubHeadingListStart
+    \resumeSubItem
+  {Rank 1, Merit Scholarship, SSN College of Engineering}{2019-20}
       \resumeSubItem
   {Merit Scholarship, SSN College of Engineering}{2017-18}
-  \resumeSubItem
-  {Rank 1, Merit Scholarship, SSN College of Engineering}{2019-2020}
 \resumeSubHeadingListEnd
 
 %-------------------------------------------
@@ -286,16 +307,16 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Python, C, C++, SQL, Java, JavaScript, HTML}
+     \textbf{Languages}{: Python, C,  SQL, Java, JavaScript, HTML}
       }
       \item{
-       \textbf{Frameworks and Technologies}{: Android Studio, React, Redux, Keras, PyTorch, FastAI}
+       \textbf{Frameworks and Technologies}{: React, Redux, NodeJS, Kubernetes, Prometheus, PyTorch, FastAI}
     }
   \resumeSubHeadingListEnd
 
 \section{Volunteering}
 \resumeSubHeadingListStart
-\resumeItem{Google }{Organized the Google AI Explore ML Workshop at SSN College of Engineering.}
+\resumeItem{Google}{Organized the Google AI Explore ML Workshop at SSN College of Engineering.}
 \resumeItem{Stanford University}{Section Leader for CS106A, offered during COVID-19 pandemic, with 10,000 global students participating from around the world.}
 \resumeSubHeadingListEnd
 %-------------------------------------------
