@@ -14,3 +14,5 @@ Transcripts.pdf
 ID card.pdf
 *.fls
 *.fdb*
+.vscode*
+.vscode/*
