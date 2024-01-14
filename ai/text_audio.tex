@@ -1,0 +1,191 @@
+%-------------------------
+% Resume in Latex
+% Author: Rohit Midha
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\evensidemargin}{-0.3in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.4in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubSubHeading}[2]{\textit{\small #1} \hfill \textit{\small #2} }
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Rohit Midha} & Email: \href{mailto:rohit.midha23@gmail.com}{rohit.midha23@gmail.com}\\
+  \href{https://rohitmidha23.github.io/}{https://rohitmidha23.github.io/} & Mobile: +44 7444 651443 \\
+  {} & \href{https://github.com/RohitMidha23}{Github: RohitMidha23}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Imperial College London}{London, United Kingdom}
+      {MSc Computing (Artificial Intelligence and Machine Learning)}{Sept. 2023 -- Sept. 2024}
+    \resumeSubheading
+      {SSN College of Engineering, Anna University}{Tamil Nadu, India}
+      {Bachelor of Engineering in Computer Science and Engineering;  \textbf{GPA: 9.2/10}}{Aug. 2017 -- July 2021}
+      
+      \small{University Rank: \#10, College Rank: \#3}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {\href{https://www.srmd.org/en-GB/}{Shrimad Rajchandra Mission, Dharampur}}{}
+  {AI Engineer}{December 2022 -- Present }
+    \resumeItemListStart
+    \resumeItem{\href{https://www.srmd.org/en-GB/news/shrimad-rajchandra-mission-dharampur-introduces-a-pathbreaking-initiative-artificial-intelligence-makes-spirituality-accessible-globally/}{Multilingual AI}}
+      {
+        \begin{itemize}
+          \item Engineered personalized text-to-speech synthesis models across eight languages, embodying Gurudev's unique vocal essence, thereby broadening access to spiritual wisdom. \href{https://www.instagram.com/reel/CxI8gwcohG5/}{View Global Launch!} 
+          \item Implemented Speech to Translated Text (S2TT) and Automatic Speech Recognition (ASR) pipelines to automate subtitling and translation processes for various low resource Indian languges.
+        \end{itemize}
+      }  
+    \resumeItemListEnd
+
+    \resumeSubheading
+  {Langchain}{}
+  {Open Source Contributor}{May 2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{LangchainJS}
+      {
+        \begin{itemize}
+          \item Implemented various LLM chains, such as the Refine LLM Chain for long form documents.
+          \item Introduced Entity Memory store in that interacts with LLM Chains and Prompt Templates to provide entity context. 
+        \end{itemize}
+      }  
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {\href{https://www.goldmansachs.com/}{Goldman Sachs}}{}
+    {Engineering Analyst}{August 2021 -- May 2023}
+    \resumeItemListStart
+    \resumeItem{Risk Analysis and Review Engine (RARE)}
+        {
+        \begin{itemize}
+        \item By automating archaic workflows, RARE lowers costs and improves the quality and UX of the review process.
+        \item Designed backend architecure for early detection of anomalies, increasing anomaly detection by 30\%.
+        \item Designed the Stats and Management Dashboard to provide high-level insights to senior management.
+        \item Mentored and trained 5 graduate-level software developer new hires. 
+        \end{itemize}
+        }
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--------Research and Publications--------
+\section{Research: Posters, Publications and Talks}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+      {\href{https://bit.ly/OpenImagesPoster2019}{A Low-Cost Solution to the Open Images Instance Segmentation Challenge}}{Poster accepted at International Conference on Computer Vision (ICCV), 2019. \href{https://bit.ly/OpenImagesPoster2019}{Poster here.}}
+    \resumeSubItem
+      {\href{https://bit.ly/AMLDPresentationDEEP}{Transfer Learning for International Crisis Response}}{Talk and Presentation at the Challenge Track of Applied Machine Learning Days (AMLD), 2020. \href{https://bit.ly/AMLDPresentationDEEP}{Slides here.} }
+  \resumeSubHeadingListEnd
+
+%--------Achievements------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+  \resumeSubItem
+    {Runner Up, Goldman Sachs Hackathon}{2022}
+  
+  \resumeSubItem
+    {\href{https://bit.ly/AMLDPresentationDEEP}{Rank 2, Transfer Learning for International Crisis Response}, DEEP - AIcrowd}{Jan 2020}
+  \resumeSubItem
+  {Merit Scholarship, SSN College of Engineering}{2017-18, 2019-20}
+  \resumeSubItem
+    {Winner, AstraZeneca AI Hackathon}{Jan 2020}
+
+  \resumeSubHeadingListEnd
+
+
+%--------------------------------------------
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, SQL, Java, JavaScript, HTML, CSS}
+      }
+      \item{
+       \textbf{Frameworks and Technologies}{: React, NodeJS, Kubernetes, Docker, PyTorch, Langchain, HuggingFace, GCP, AWS, Replicate, TailwindCSS, NextJS}
+    }
+  \resumeSubHeadingListEnd
+
+
+\end{document}
