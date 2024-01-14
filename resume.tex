@@ -17,6 +17,14 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -76,7 +84,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://rohitmidha23.github.io/}{\Large Rohit Midha}} & Email : \href{mailto:rohit.midha23@gmail.com}{rohit.midha23@gmail.com}\\
+  \textbf{\Large Rohit Midha} & Email : \href{mailto:rohit.midha23@gmail.com}{rohit.midha23@gmail.com}\\
   \href{https://rohitmidha23.github.io/}{https://rohitmidha23.github.io/} & Mobile : +44 7444651443
 \end{tabular*}
 
@@ -115,10 +123,10 @@
   {Langchain}{}
   {Open Source Contributor}{May 2023 -- Present }
     \resumeItemListStart
-      \resumeItem{Multilingual AI}
+      \resumeItem{LangchainJS}
       {
         \begin{itemize}
-          \item Implemented various chains, such as the Refine LLM Chain, in the JavaScript project. 
+          \item Implemented various LLM chains, such as the Refine LLM Chain. 
           \item Introduced Entity Memory store in that interacts with LLM Chains and Prompt Templates to provide entity context. 
         \end{itemize}
       }  
@@ -178,7 +186,7 @@
       \resumeItem{AIcrowd Blitz}
         {Launched the Blitz series of challenges on the platform, curating datasets and defining tasks.}
     \resumeItemListEnd
-    \fi
+\fi
     \resumeSubheading
     {Indian Institute of Technology, Madras}{}
     {Research Intern}{November 2019 -- May 2020}
@@ -211,7 +219,7 @@
     \resumeSubItem
       {\href{https://bit.ly/OpenImagesPoster2019}{A Low-Cost Solution to the Open Images Instance Segmentation Challenge}}{Poster accepted at International Conference on Computer Vision (ICCV), 2019. \href{https://bit.ly/OpenImagesPoster2019}{Poster here.}}
     \resumeSubItem
-      {\href{https://bit.ly/AMLDPresentationDEEP}{Transfer Learning for International Crisis Response}}{Talk and Presentation at the Challenge Track of Applied Machine Learning Days (AMLD), 2020 \href{https://bit.ly/AMLDPresentationDEEP}{Slides here.} }
+      {\href{https://bit.ly/AMLDPresentationDEEP}{Transfer Learning for International Crisis Response}}{Talk and Presentation at the Challenge Track of Applied Machine Learning Days (AMLD), 2020. \href{https://bit.ly/AMLDPresentationDEEP}{Slides here.} }
   \resumeSubHeadingListEnd
 %-----------PROJECTS-----------------
 \section{Projects and Ventures}
@@ -265,6 +273,7 @@
 
   \resumeSubHeadingListEnd
 
+\iffalse
 \section{Extra Curricular Achievements}
   \resumeSubHeadingListStart
     \resumeSubItem
@@ -274,6 +283,7 @@
     \resumeSubItem
     {Director, SRM Model United Nations, ECOFIN Committee}{2018}
   \resumeSubHeadingListEnd
+\fi
 %--------Scholarships------------
 \section{Scholarships}
   \resumeSubHeadingListStart
@@ -305,9 +315,9 @@
 \resumeSubHeadingListEnd
 %-------------------------------------------
 %--------Blog------------
-\iffalse
+% \iffalse
 \section{Blog}
-I also run a blog which you can find at \href{https://rohitmidha23.github.io/blog}{rohitmidha23.github.io/blog}. It has had over 30k page views.
-\fi
+I also run a blog with over 70k page views. Find it at \href{https://rohitmidha23.github.io/blog}{rohitmidha23.github.io/blog}!
+% \fi
 
 \end{document}
