@@ -1,0 +1,336 @@
+%-------------------------
+% Resume in Latex
+% Author: Rohit Midha
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\evensidemargin}{-0.3in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.4in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubSubHeading}[2]{\textit{\small #1} \hfill \textit{\small #2} }
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Rohit Midha} & Email: \href{mailto:rohit.midha23@gmail.com}{rohit.midha23@gmail.com}\\
+  \href{https://rohitmidha23.github.io/}{https://rohitmidha23.github.io/} & Mobile: +44 7444 651443 \\
+  {} & \href{https://github.com/RohitMidha23}{Github: RohitMidha23}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Imperial College London}{London, United Kingdom}
+      {MSc Computing (Artificial Intelligence and Machine Learning)}{Sept. 2023 -- Sept. 2024}
+    \resumeSubheading
+      {SSN College of Engineering, Anna University}{Tamil Nadu, India}
+      {Bachelor of Engineering in Computer Science and Engineering;  \textbf{GPA: 9.2/10}}{Aug. 2017 -- July 2021}
+      
+      \small{University Rank: \#10, College Rank: \#3}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {\href{https://www.srmd.org/en-GB/}{Shrimad Rajchandra Mission, Dharampur}}{}
+  {AI Engineer Volunteer}{December 2022 -- Present }
+    \resumeItemListStart
+    \resumeItem{\href{https://www.srmd.org/en-GB/news/shrimad-rajchandra-mission-dharampur-introduces-a-pathbreaking-initiative-artificial-intelligence-makes-spirituality-accessible-globally/}{Multilingual AI}}
+      {
+        \begin{itemize}
+          \item Engineered personalized text-to-speech synthesis models across eight languages, embodying Gurudev's unique vocal essence, thereby broadening access to spiritual wisdom. \href{https://www.instagram.com/reel/CxI8gwcohG5/}{View Global Launch!} 
+          \item Implemented pipelines to automate subtitling and translation processes, resulting in a substantial reduction of upload time from 12 hours to just 3 hours.
+        \end{itemize}
+      }  
+      \resumeItem{Audience Quiz}{
+        \begin{itemize}
+          \item Designed and implemented a highly scalable quiz application with NextJS + TailwindCSS, seamlessly accommodating an expansive user base of over 10,000 concurrent participants. 
+          \item Optimized performance in a resource-constrained ecosystem characterized by a 512kbps internet connection and a singular 8GB quad-core Dell server. 
+        \end{itemize}
+        }
+    \resumeItemListEnd
+
+    \resumeSubheading
+  {Langchain}{}
+  {Open Source Contributor}{May 2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{LangchainJS}
+      {
+        \begin{itemize}
+          \item Implemented various LLM chains, such as the Refine LLM Chain. 
+          \item Introduced Entity Memory store in that interacts with LLM Chains and Prompt Templates to provide entity context. 
+        \end{itemize}
+      }  
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {\href{https://www.goldmansachs.com/}{Goldman Sachs}}{}
+    {Engineering Analyst}{August 2021 -- May 2023}
+    \resumeItemListStart
+    \resumeItem{Risk Analysis and Review Engine (RARE)}
+        {
+        \begin{itemize}
+        \item By automating archaic workflows, RARE lowers costs and improves the quality and UX of the review process.
+        \item Designed system for early detection of anomalies increasing anomaly detection by 30\%.
+        \item Reduced review time by a third, from over 6 hours to 2 hours.
+        \item Engineered the backend architecture for the platform using  Java micro-services and deployed via Kubernetes.
+        \item Designed the Stats and Management Dashboard to provide high-level insights to senior management.
+        \item Optimized data flow for calculating key metrics like Net Cash Outflow across various business hierarchies.
+        \item Spearheaded the initiative to onboard onto Snowflake, reducing data access time by 41\%. 
+        \item Defined the SLA and set up a custom Prometheus framework for monitoring the Kubernetes deployments.
+        \item Mentored and trained 3 graduate-level software interns, with each getting return offers. 
+        \end{itemize}
+        }
+    \resumeItemListEnd
+    \iffalse
+    \resumeSubSubHeading {Summer Analyst}{May 2020 -- June 2020}
+    \resumeItemListStart
+    \resumeItem{Risk Metrics Inventory UI}
+        {
+          \begin{itemize}
+          \item Developed a React UI that acts as a central registry and lets users perform CRUD operations on metrics meta-data, keeping inter-dependencies consistent.
+          \item Reduced onboarding time from over 5 minutes to under a minute.
+          \end{itemize}
+        }
+    \resumeItemListEnd
+    \fi
+
+    \iffalse
+    \resumeSubheading
+      {CodeFemme}{}
+      {Founder, CTO}{June 2018 -- Present}
+      \resumeItemListStart
+      \resumeItem{Partner Schools}
+          {Partnered with over 70 schools in the city to provide best-in-class Python workshops and class material for high school students.}
+        \resumeItem{Te(a)chTheTeach}
+          {Taught undergraduate-level Python and important libraries to 100+ CBSE teachers through a workshop series aimed at teaching Post Graduate Teachers (PGTs).}
+        \resumeItem{Numpy, Pandas and Neural Nets}
+          {Guest Lecture on the topic "Numpy, Pandas and Neural Nets" at Kendra Vidyalaya, Indian Institute of Technology, Madras. 50+ teachers from across the country in attendance.}
+      \resumeItemListEnd
+    \fi
+\iffalse
+    \resumeSubheading
+      {AIcrowd}{}
+      {Research Intern}{March 2020 -- May 2020}
+      \resumeItemListStart
+      \resumeItem{World Health Organization}
+        {Implemented Object Detection models to identify various types of endangered snail species in the wild.}
+      \resumeItem{AIcrowd Blitz}
+        {Launched the Blitz series of challenges on the platform, curating datasets and defining tasks.}
+    \resumeItemListEnd
+\fi
+    \resumeSubheading
+    {Indian Institute of Technology, Madras}{}
+    {Research Intern}{November 2019 -- May 2020}
+    \resumeItemListStart
+    \resumeItem{Mentors}
+        {Professor Gitakrishnan Ramadurai, Professor Balaraman Ravindran}
+        \resumeItem{Traffic Optimisation}
+        {
+          \begin{itemize}
+          \item Developed software integrated across state-wide CCTV camera networks to intelligently optimize traffic signal operations through predictive traffic analysis. 
+          \item Implemented vision models capable of accurately identifying license plates for vehicles that contravene traffic regulations, achieving a remarkable precision rate of 86\%.
+          \end{itemize}
+        }
+    \resumeItemListEnd
+\iffalse    
+   \resumeSubheading
+    {Sigmoid}{}
+    {Data Scientist Intern}{May 2019 -- July 2019}
+    \resumeItemListStart
+      \resumeItem{Named Entity Recognition}
+        {Remodeled Conditional Random Fields, Recurrent Neural Networks and Long Short Term Memories for Named Entity Recognition of Medical Drugs. Increased accuracy from 77\% to 81\%.}
+\iffalse
+        \resumeItem{Quantum Machine Learning}
+        {Programmed QML algorithms using Variational Circuits for Credit Card Fraud Detection.}
+\fi
+    \resumeItemListEnd
+\fi
+\resumeSubHeadingListEnd
+
+%--------Research and Publications--------
+\section{Research: Posters, Publications and Talks}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+      {Risk Analysis and Review Engine (RARE)}{Digital Poster presented at the Goldman Sachs Internal Engineering Conference, 2022.}
+    \resumeSubItem
+      {\href{https://bit.ly/OpenImagesPoster2019}{A Low-Cost Solution to the Open Images Instance Segmentation Challenge}}{Poster accepted at International Conference on Computer Vision (ICCV), 2019. \href{https://bit.ly/OpenImagesPoster2019}{Poster here.}}
+    \resumeSubItem
+      {\href{https://bit.ly/AMLDPresentationDEEP}{Transfer Learning for International Crisis Response}}{Talk and Presentation at the Challenge Track of Applied Machine Learning Days (AMLD), 2020. \href{https://bit.ly/AMLDPresentationDEEP}{Slides here.} }
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects and Ventures}
+ \resumeSubHeadingListStart
+  	\resumeSubItem{\href{https://bit.ly/PharmAssistDemo}{pharmAssist by That Medical Company}}
+      {A novel label and Android App that lets visually impaired people gain health literacy. Reads out easy instructions for pills when the prescription bottle is placed on the phone screen. Connected with Alexa for easy access. \href{https://bit.ly/PharmAssistDemo}{Watch the demo!}}
+    \resumeSubItem{jargone}
+      {A web app that summarizes Terms and Conditions to keep you informed about the data companies collect.}
+      
+    \resumeSubItem{\href{https://github.com/sainath24/federated_learning}{Federated Learning for Medical Imaging}}
+      {A framework that provides a complete machine learning pipeline to let researchers and end users train any model on medical image data from various servers. Uses YAML files for simple configuration.}
+  
+    \resumeSubItem{Facial Recognition Attendance Manager}
+      {Creating a prototype of a model attendance manager using Facial Recognition integrated with Raspberry Pi, Cameras and Firebase requests made by the student. \\Fully funded by SSN College of Engineering.}
+\iffalse
+    \resumeSubItem{Calmity}
+      {An app that helps victims of a disaster find food, transport and shelter in nearby places and allows them to make SOS calls. Further, allows able users to find NGOs that they can volunteer and post about any amenities that they have to offer.}
+    \resumeSubItem{trashify}
+      {Android Application that uses Deep Learning and TensorFlowLite to classify your trash into 3 categories.\\Prototype of model using Raspberry Pi in the implementation phase.}
+
+    \resumeSubItem{Other}
+      {The SSNMUN Website, binarify (convert images to binary art.)}
+\fi
+  \resumeSubHeadingListEnd
+
+%--------Achievements------------
+\section{Technical Achievements}
+  \resumeSubHeadingListStart
+  \resumeSubItem
+    {Runner Up, Goldman Sachs Hackathon}{2022}
+  \resumeSubItem
+    {Runner Up, Digital Poster, Goldman Sachs Internal Engineering Conference}{2022}
+  \resumeSubItem
+    {Runner Up, Innovation, Goldman Sachs Awards}{2021}
+  \resumeSubItem
+    {\href{https://www.aicrowd.com/challenges/hockey-team-classification/leaderboards}{Rank 2, Hockey Team Classification Challenge}, AIcrowd}{October 2020}
+  \resumeSubItem
+    {\href{https://bit.ly/AMLDPresentationDEEP}{Rank 2, Transfer Learning for International Crisis Response}, DEEP - AIcrowd}{Jan 2020}
+  \resumeSubItem
+    {Winner, AstraZeneca AI Hackathon}{Jan 2020}
+  \resumeSubItem
+    {\href{https://www.aicrowd.com/challenges/food-recognition-challenge/leaderboards?challenge_round_id=116}{Rank 1, Round 1 - 3, Food Recognition Challenge}, Seerave Foundation}{Dec 2019}
+  \resumeSubItem
+    {\href{https://www.kaggle.com/competitions/open-images-2019-instance-segmentation/leaderboard}{Rank 34, Open Images Instance Segmentation Challenge}, Google Research}{October 2019}
+  \resumeSubItem
+    {Runner Up, Amazon Web Services (AWS) Challenge, AngelHack Global Virtual Hackathon}{July 2019}
+  \resumeSubItem
+    {Winner, Indian Sub-Continent, AngelHack Global Virtual Hackathon}{July 2019}
+  \resumeSubItem
+    {Finalist, International Youth Math Challenge}{Nov 2018}
+
+  \resumeSubHeadingListEnd
+
+\iffalse
+\section{Extra Curricular Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+    {Under Secretary General, Tech, SSN Model United Nations}{2019-2020}
+    \resumeSubItem
+    {Best Novice Speaker, Independent University Bangladesh - Parliamentary Debate}{2019}
+    \resumeSubItem
+    {Director, SRM Model United Nations, ECOFIN Committee}{2018}
+  \resumeSubHeadingListEnd
+\fi
+%--------Scholarships------------
+\section{Scholarships}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+  {Rank 1, Merit Scholarship, SSN College of Engineering}{2019-20}
+      \resumeSubItem
+  {Merit Scholarship, SSN College of Engineering}{2017-18}
+\resumeSubHeadingListEnd
+
+%--------------------------------------------
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, SQL, Java, JavaScript, HTML, CSS}
+      }
+      \item{
+       \textbf{Frameworks and Technologies}{: React, NodeJS, Kubernetes, Docker, PyTorch, Langchain, HuggingFace, GCP, AWS, Replicate, TailwindCSS, NextJS}
+    }
+  \resumeSubHeadingListEnd
+
+\section{Volunteering}
+\resumeSubHeadingListStart
+\resumeItem{\href{https://codefemme.github.io/}{CodeFemme}}{Partnered with over 70 schools in the city to provide best-in-class Python workshops for teachers and class material for high school students.}
+\resumeItem{Stanford University}{Section Leader for \href{https://codeinplace.stanford.edu/}{CS106A - Code in Place}, offered during COVID-19 pandemic, with 10,000 global students participating from around the world.}
+\iffalse
+\resumeItem{Google}{Organized the Google AI Explore ML Workshop at SSN College of Engineering.}
+\fi
+\resumeSubHeadingListEnd
+%-------------------------------------------
+%--------Blog------------
+% \iffalse
+\section{Blog}
+I run a blog with over 70k page views. Find it at \href{https://rohitmidha23.github.io/blog}{rohitmidha23.github.io/blog}!
+% \fi
+
+\end{document}
